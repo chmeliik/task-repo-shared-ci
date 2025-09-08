@@ -13,6 +13,15 @@
       ],
       "schedule": [
         "on sunday"
+      ]
+    },
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
       ],
       "automerge": true
     }
