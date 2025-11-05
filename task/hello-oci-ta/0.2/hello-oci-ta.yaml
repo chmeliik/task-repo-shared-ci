@@ -13,7 +13,7 @@ spec:
 
     1. Make it easier to test the behavior of the scripts and workflows in this repo
     2. Provide an example of the repo layout that the workflows expect to operate on
-    3. This 0.2 version also provides an example of a task migration by adding a required 'pipelinerun-name' param.
+    3. This 0.2 version also provides an example of a task migration by adding a required param.
   params:
     - name: SOURCE_ARTIFACT
       description: The Trusted Artifact URI pointing to the artifact with
