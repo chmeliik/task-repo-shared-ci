@@ -38,8 +38,12 @@ Process:
 3. Restore the files that got deleted in the process
 
    ```bash
-   git diff --diff-filter=D --name-only -- .github/ hack/ | xargs git checkout --
+   git diff --diff-filter=D --name-only -- .github/ hack/ |
+      | tee maybe-unneded.txt | xargs git checkout --
    ```
+
+   1. Optional: inspect the `maybe-unneeded.txt` file and see if you really do need
+      the deleted files, or if shared-ci covers the functionality already.
 
 4. If you use [Renovate], create/update your renovate.json using the
    [`hack/renovate-ignore-shared-ci.sh`](hack/renovate-ignore-shared-ci.sh) script
