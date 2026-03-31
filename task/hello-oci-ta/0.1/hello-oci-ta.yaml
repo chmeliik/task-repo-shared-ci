@@ -6,7 +6,7 @@ metadata:
   annotations:
     tekton.dev/tags: konflux
   labels:
-    app.kubernetes.io/version: "0.1"
+    app.kubernetes.io/version: 0.1.alpha
 spec:
   description: |-
     Dummy task whose purpose is to:
